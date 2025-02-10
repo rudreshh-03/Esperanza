@@ -2,44 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--=============== ICONS ===============-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!--=============== ICONS ===============-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <link href="./assets/js/popup.js" />
-    <script>
-      // When the user clicks on <div>, open the popup
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    </script>
+  <link href="assets/js/popup.js" />
+  <link rel="stylesheet" href="assets/js/scroll.js">
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
 
-    <title>ESPERANZA 2K25</title>
-  </head>
+  <script async custom-element="amp-fx-collection"
+    src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+  <title>ESPERANZA 2K25</title>
+</head>
 
 <body>
   <!--==================== HEADER ====================-->
@@ -129,8 +122,11 @@
             <img alt="" class="home-tooltip-img" />
           </div>
         </div>
-
-        <a href="#" class="home-button button button-register">Register Now<i class="ri-play-circle-fill"></i></a>
+        <footer class="footer-register home-button">
+          <p>REGISTER NOW</p>
+        </footer>
+        <!-- <a href="#" class="home-button button button-register">Register Now</a> -->
+        <!-- <i class="ri-play-circle-fill"></i> -->
       </div>
     </section>
     <!--==================== ABOUT ====================-->
@@ -564,6 +560,9 @@
 
     <!--=========== WEB JS ============-->
     <script src="./assets/js/web.js"></script>
+
+    <script async custom-element="amp-fx-collection"
+      src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
 </body>
 
 </html>
