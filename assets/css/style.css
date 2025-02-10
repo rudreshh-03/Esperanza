@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -538,13 +539,14 @@ img {
 
 .button-register {
   border-radius: 1rem;
+  font-family: "Merienda";
+  font-size: 1.2rem;
   background: rgb(66, 201, 26);
   background: linear-gradient(
     0deg,
     rgba(66, 201, 26, 1) 20%,
     rgba(152, 209, 51, 1) 96%
   );
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button i {
