@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -470,6 +471,23 @@ img {
   color: black;
 }
 /*==================================*/
+/*=======REGISTER FOOTER=============*/
+.footer-register {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: rgb(120, 109, 109);
+  color: white;
+  text-align: center;
+  font-family: "Merienda";
+  font-size: 1.2rem;
+  text-decoration: solid;
+  border-radius: 100px;
+  z-index: 1000;
+  margin-bottom: 6px;
+}
+
 /*=============== HOME ===============*/
 .home {
   position: relative;
@@ -502,11 +520,11 @@ img {
 
 .home-title {
   font-size: var(--biggest-font-size);
-  font-family: "Rye";
+  font-family: "Cormorant Garamond";
   display: flex;
   column-gap: 0.25rem;
   color: var(--first-color);
-  color: white;
+  color: whitesmoke;
   position: relative;
   justify-self: center;
   /* text-shadow: 3px 3px black; */
@@ -515,7 +533,7 @@ img {
 }
 
 .home-title2 {
-  color: red;
+  color: whitesmoke;
 }
 .home-title span:nth-child(2) {
   z-index: 1;
@@ -612,12 +630,8 @@ img {
   border-radius: 1rem;
   font-family: "Merienda";
   font-size: 1.2rem;
-  background: rgb(66, 201, 26);
-  background: linear-gradient(
-    0deg,
-    rgba(66, 201, 26, 1) 20%,
-    rgba(152, 209, 51, 1) 96%
-  );
+  background: transparent;
+  text-decoration: solid;
 }
 
 .button i {
@@ -999,9 +1013,9 @@ img {
   .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 26px;
+  margin-bottom: 0px;
   margin-left: 0px;
-  min-height: 50px;
+  min-height: 0px;
 }
 
 .contact_us_6 .input {
@@ -2053,7 +2067,7 @@ body {
     font-size: 1.25rem;
   }
 
-  .home-button {
+  .home-button1 {
     position: absolute;
     bottom: 4.5rem;
   }
