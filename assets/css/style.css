@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -304,15 +306,50 @@ img {
   .favorite-article {
     justify-items: center;
   }
+  .swiper-wrapper {
+    display: none;
+  }
   .swiper-slide-active,
   .swiper-slide-duplicate-active {
-    filter: none;
-    scale: 0;
+    display: none;
   }
-  .event-parent {
+  .poster-main-pc {
+    display: none;
+  }
+  .poster-main-mobile {
+    display: block;
+  }
+
+  /*============EVENTS==============*/
+
+  .event-cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .event-card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .event-card img {
+    max-width: 100%;
+  }
+
+  .event-card .text {
+    padding: 0 20px 20px;
+  }
+
+  .event-card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -625,6 +662,91 @@ img {
 .swiper-slide-duplicate-active {
   filter: blur(0);
   scale: 1;
+}
+/*===========MAIN===============*/
+.event-title {
+  font-size: 2.5rem;
+  color: brown;
+  font-family: "Eater";
+  margin-top: -25px;
+}
+.event-date {
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Space Grotesk";
+}
+.event-date > span {
+  color: gold;
+  font-size: larger;
+}
+.poster-main-mobile {
+  display: none;
+}
+.poster-main-pc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5%;
+  margin-bottom: -10%;
+  transform: rotate(270deg);
+  width: 50%;
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  background: rgb(0, 11, 79);
+  background: radial-gradient(
+    circle,
+    rgba(0, 11, 79, 1) 20%,
+    rgba(0, 11, 79, 1) 20%
+  );
+}
+
+.cards > h1 {
+  text-align: center;
+  justify-items: center;
+  align-self: center;
+  font-family: "Space Grotesk";
+  margin-top: 8%;
+}
+
+.card-parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 230px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 4px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background: rgb(0, 25, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 25, 179, 1) 20%,
+    rgba(0, 23, 168, 1) 84%
+  );
+}
+
+.card .text {
+  padding: 0 20px 20px;
+}
+
+.card > .text > h3 {
+  text-align: center;
+}
+
+.event-cards {
+  display: none;
 }
 
 /*=============== MODEL ===============*/
@@ -1110,6 +1232,10 @@ img {
     margin-bottom: 40px;
     margin-left: 0px;
   }
+
+  .favorite-article > h1 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1239,6 +1365,62 @@ img {
 
   .contact_us_6 .input {
     height: 45px;
+  }
+  .poster-main-pc {
+    display: none;
+  }
+  .poster-main-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    width: 87%;
+    height: auto;
+  }
+  /*============EVENTS==============*/
+
+  .event-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .event-card {
+    flex: 0 0 275px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+  }
+
+  .event-card img {
+    max-width: 100%;
+  }
+
+  .event-card .text {
+    padding: 0 20px 20px;
+  }
+
+  .event-card > .text > h3 {
+    color: gold;
+    text-align: center;
+  }
+
+  .event-card > .text > p {
+    color: white;
+  }
+
+  .event-card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-family: "Space Grotesk";
+    font-size: medium;
+    border-radius: 15px;
   }
 }
 
