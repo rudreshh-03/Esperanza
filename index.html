@@ -1,364 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
-    <!--=============== ICONS ===============-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+  <!--=============== ICONS ===============-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <link href="./assets/js/popup.js" />
-    <script>
-      // When the user clicks on <div>, open the popup
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <title>ESPERANZA 2K25</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <div class="college-details">
-        <img
-          src="images/college-logo2-removebg.png"
-          alt=""
-          class="college-logo"
-        />
-        <img
-          src="images/college-name-logo-removebg.png"
-          alt=""
-          class="college-name"
-        />
+  <link href="../JBL/assets/js/popup.js" />
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+  </script>
+
+  <title>ESPERANZA 2K25</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <div class="college-details">
+      <img src="../JBL/images/college-logo2-removebg.png" alt="" class="college-logo" />
+      <img src="../JBL/images/college-name-logo-removebg.png" alt="" class="college-name" />
+    </div>
+    <nav class="nav container">
+      <a href="#" class="nav-logo"></a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#favorite" class="nav-link">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#model" class="nav-link">Co-Ordinators</a>
+          </li>
+        </ul>
+
+        <!-- Close Button -->
+        <div class="nav-close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
       </div>
-      <nav class="nav container">
-        <a href="#" class="nav-logo"></a>
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link active-link">Home</a>
-            </li>
 
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
+      <!-- Toggle Button -->
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-            <li class="nav-item">
-              <a href="#favorite" class="nav-link">Events</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#model" class="nav-link">Co-Ordinators</a>
-            </li>
-          </ul>
-
-          <!-- Close Button -->
-          <div class="nav-close" id="nav-close">
-            <i class="bx bx-x"></i>
-          </div>
-        </div>
-
-        <!-- Toggle Button -->
-        <div class="nav-toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!-- Optional: some overlay text to describe the video -->
-      <!--     <div class="content">
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!-- Optional: some overlay text to describe the video -->
+    <!--     <div class="content">
       <h1>Heading</h1>
       <p>Lorem ipsum</p> -->
-      <!-- Use a button to pause/play the video with JavaScript -->
-      <!--  <button id="myBtn" onclick="myFunction()">Pause</button>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <!--  <button id="myBtn" onclick="myFunction()">Pause</button>
     </div> -->
 
+    <!--==================== VIDEO ====================-->
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
       <!--==================== VIDEO ====================-->
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <!--==================== VIDEO ====================-->
-        <video autoplay muted loop id="myVideo" class="myVideo-pc">
-          <source src="videos/bgDance1.mp4" type="video/mp4" />
-        </video>
-        <video autoplay muted loop id="myVideo" class="myVideo-mobile">
-          <source src="videos/bgDance2Mobile.mp4" type="video/mp4" />
-        </video>
+      <video autoplay muted loop id="myVideo" class="myVideo-pc">
+        <source src="videos/bgDance1.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop id="myVideo" class="myVideo-mobile">
+        <source src="videos/bgDance2Mobile.mp4" type="video/mp4" />
+      </video>
 
-        <div class="home-container container grid">
-          <div class="home-content">
-            <img src="" alt="" class="home-img" />
+      <div class="home-container container grid">
+        <div class="home-content">
+          <img src="" alt="" class="home-img" />
 
-            <h1 class="home-title glow">
-              <span>E</span>
-              <span>S</span>
-              <span>P</span>
-              <span>E</span>
-              <span>R</span>
-              <span>A</span>
-              <span>N</span>
-              <span>Z</span>
-              <span>A</span>
-            </h1>
-            <h1 class="home-title home-title2 glow">
-              <span>2</span>
-              <span>K</span>
-              <span>2</span>
-              <span>5</span>
-            </h1>
+          <h1 class="home-title glow">
+            <span>E</span>
+            <span>S</span>
+            <span>P</span>
+            <span>E</span>
+            <span>R</span>
+            <span>A</span>
+            <span>N</span>
+            <span>Z</span>
+            <span>A</span>
+          </h1>
+          <h1 class="home-title home-title2 glow">
+            <span>2</span>
+            <span>K</span>
+            <span>2</span>
+            <span>5</span>
+          </h1>
 
-            <div class="home-tooltip">
-              <img alt="" class="home-tooltip-img" />
-            </div>
-          </div>
-
-          <a href="#" class="home-button button button-register"
-            >Register Now<i class="ri-play-circle-fill"></i
-          ></a>
-
-          <!--  <div class="home-social">
-            <span class="home-social-text">Follow Us</span>
-
-            <div class="home-social-links">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="home-social-link"
-                ><i class="bx bxl-instagram"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="home-social-link"
-              >
-                <i class="bx bxl-facebook"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                class="home-social-link"
-              >
-                <i class="bx bxl-youtube"></i
-              ></a>
-            </div>
-          </div> -->
-        </div>
-      </section>
-      <!--==================== ABOUT ====================-->
-      <section class="about section color-change-b" id="about">
-        <div class="about-container container grid">
-          <img
-            src="images/mainLogo.jpg"
-            alt="about image"
-            class="about-img"
-          />
-          <div class="about-data">
-            <h2 class="section-title">ABOUT ESPERANZA</h2>
-
-            <p class="about-description">
-              ESPERANZA is an Annual Tech Cultural Fest conducted by Vel Tech
-              Multi Tech Dr.Rangarajan Dr.Sakunthala Engineering college, Avadi,
-              Chennai, bringing together the brightest minds and creative
-              spirits from across the nation.More than just an event, ESPERANZA
-              is an emotion - a celebration of innovation, creativity, and
-              excellence. It's a self-evolving episode where technology meets
-              culture, creating an immersive experience that pushes boundaries
-              and inspires future leaders.
-            </p>
-
-            <a href="#" class="button">
-              Know More <i class="ri-information-fill"></i>
-            </a>
+          <div class="home-tooltip">
+            <img alt="" class="home-tooltip-img" />
           </div>
         </div>
-      </section>
 
-      <!--==================== FAVORITE ====================-->
-      <section class="favorite section" id="favorite">
-        <h2 class="section-title greenHead">EVENTS</h2>
+        <a href="#" class="home-button button button-register">Register Now<i class="ri-play-circle-fill"></i></a>
+      </div>
+    </section>
+    <!--==================== ABOUT ====================-->
+    <section class="about section color-change-b" id="about">
+      <div class="about-container container grid">
+        <img src="../JBL/images/mainLogo.jpg" alt="about image" class="about-img" />
+        <div class="about-data">
+          <h2 class="section-title">ABOUT ESPERANZA</h2>
 
-        <div class="favorite-container">
-          <div class="favorite-swiper swiper">
-            <div class="swiper-wrapper event-parent">
-              <!-- Card 1 -->
-              <article class="favorite-article swiper-slide">
-                <img
-                  src="images/event1.jpeg"
-                  alt="image"
-                  class="favorite-img"
-                />
-                <h1>
-                  Photography - Lens Legacy <br />You see the world differently.
-                  While the rest of us are busy taking blurry photos of our food
-                  for Snapchat, you’re out there crafting art. Whether it’s a
-                  breathtaking scenery, or just an aesthetically pleasing frame
-                  of a cup, Lens Legacy is your moment to prove that your
-                  photography isn’t just ‘good’—it’s: LEGEN-wait for it- DARY.
-                </h1>
-                <span class="favorite-model button">Photography</span>
-              </article>
+          <p class="about-description">
+            ESPERANZA is an Annual Tech Cultural Fest conducted by Vel Tech
+            Multi Tech Dr.Rangarajan Dr.Sakunthala Engineering college, Avadi,
+            Chennai, bringing together the brightest minds and creative
+            spirits from across the nation.More than just an event, ESPERANZA
+            is an emotion - a celebration of innovation, creativity, and
+            excellence. It's a self-evolving episode where technology meets
+            culture, creating an immersive experience that pushes boundaries
+            and inspires future leaders.
+          </p>
 
-              <!-- Card 2 -->
-              <article class="favorite-article swiper-slide">
-                <img
-                  src="images/event2.jpeg"
-                  alt="image"
-                  class="favorite-img"
-                />
-                <h1>
-                  Short Film - Frame by Frame <br />Hollywood called. They said
-                  they might need you... but first, prove yourself here.
-                  Everyone’s got a story, but can you tell yours in a way that
-                  keeps us from scrolling away? Frame by Frame is where
-                  storytellers, visionaries, and those who believe they’re the
-                  next Scorsese get to shine. This is where scripts meet
-                  screens, where vision meets execution, and let the frames do
-                  the talking.
-                </h1>
-                <span class="favorite-model button">Short Film</span>
-              </article>
+          <a href="#" class="button">
+            Know More <i class="ri-information-fill"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-              <!-- Card 3 -->
-              <article class="favorite-article swiper-slide">
-                <img
-                  src="images/event3.jpeg"
-                  alt="image"
-                  class="favorite-img"
-                />
-                <h1>
-                  Dance - Ignite the Beat <br />
-                  The floor isn’t just for standing—it’s for owning. This isn’t
-                  your average dance battle—this is where raw passion,
-                  electrifying energy, and groundbreaking moves collide. Whether
-                  you move like lightning or just have a spectacular ability to
-                  make people feel the music, Ignite the Beat is all about
-                  setting the floor on fire (metaphorically, of course. Please,
-                  no actual fires).
-                </h1>
-                <span class="favorite-model button">Dance</span>
-              </article>
+    <!--==================== FAVORITE ====================-->
+    <section class="favorite section" id="favorite">
+      <h2 class="section-title greenHead">EVENTS</h2>
 
-              <!-- Card 4 -->
-              <article class="favorite-article swiper-slide">
-                <img
-                  src="images/event4.jpeg"
-                  alt="image"
-                  class="favorite-img"
-                />
-                <h1>
-                  Ramp Walk - The Walk of Fame <br />
-                  Confidence? Check. Swag? Check. The Walk of Fame is where
-                  attitude meets elegance, and the runway is your kingdom. This
-                  is where style meets swag, where every step is a statement,
-                  and where the runway bows down to YOU. Not everyone can handle
-                  the spotlight, but if you know how to own a room without
-                  saying a word, then buckle up: this stage was built for you.
-                </h1>
-                <span class="favorite-model button">Ramp Walk</span>
-              </article>
-              <!-- Card 5 -->
-              <article class="favorite-article swiper-slide">
-                <img
-                  src="images/event4.jpeg"
-                  alt="image"
-                  class="favorite-img"
-                />
-                <h1>
-                  Ramp Walk - The Walk of Fame <br />
-                  Confidence? Check. Swag? Check. The Walk of Fame is where
-                  attitude meets elegance, and the runway is your kingdom. This
-                  is where style meets swag, where every step is a statement,
-                  and where the runway bows down to YOU. Not everyone can handle
-                  the spotlight, but if you know how to own a room without
-                  saying a word, then buckle up: this stage was built for you.
-                </h1>
-                <span class="favorite-model button">Ramp Walk</span>
-              </article>
-            </div>
+      <div class="favorite-container">
+        <div class="favorite-swiper swiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <article class="favorite-article swiper-slide">
+              <img src="images/event1.jpeg" alt="image" class="favorite-img" />
+              <h1>
+                Photography - Lens Legacy <br />You see the world differently.
+                While the rest of us are busy taking blurry photos of our food
+                for Snapchat, you’re out there crafting art. Whether it’s a
+                breathtaking scenery, or just an aesthetically pleasing frame
+                of a cup, Lens Legacy is your moment to prove that your
+                photography isn’t just ‘good’—it’s: LEGEN-wait for it- DARY.
+              </h1>
+              <span class="favorite-model button">Photography</span>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="favorite-article swiper-slide">
+              <img src="images/event2.jpeg" alt="image" class="favorite-img" />
+              <h1>
+                Short Film - Frame by Frame <br />Hollywood called. They said
+                they might need you... but first, prove yourself here.
+                Everyone’s got a story, but can you tell yours in a way that
+                keeps us from scrolling away? Frame by Frame is where
+                storytellers, visionaries, and those who believe they’re the
+                next Scorsese get to shine. This is where scripts meet
+                screens, where vision meets execution, and let the frames do
+                the talking.
+              </h1>
+              <span class="favorite-model button">Short Film</span>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="favorite-article swiper-slide">
+              <img src="images/event3.jpeg" alt="image" class="favorite-img" />
+              <h1>
+                Dance - Ignite the Beat <br />
+                The floor isn’t just for standing—it’s for owning. This isn’t
+                your average dance battle—this is where raw passion,
+                electrifying energy, and groundbreaking moves collide. Whether
+                you move like lightning or just have a spectacular ability to
+                make people feel the music, Ignite the Beat is all about
+                setting the floor on fire (metaphorically, of course. Please,
+                no actual fires).
+              </h1>
+              <span class="favorite-model button">Dance</span>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="favorite-article swiper-slide">
+              <img src="images/event4.jpeg" alt="image" class="favorite-img" />
+              <h1>
+                Ramp Walk - The Walk of Fame <br />
+                Confidence? Check. Swag? Check. The Walk of Fame is where
+                attitude meets elegance, and the runway is your kingdom. This
+                is where style meets swag, where every step is a statement,
+                and where the runway bows down to YOU. Not everyone can handle
+                the spotlight, but if you know how to own a room without
+                saying a word, then buckle up: this stage was built for you.
+              </h1>
+              <span class="favorite-model button">Ramp Walk</span>
+            </article>
+            <!-- Card 5 -->
+            <article class="favorite-article swiper-slide">
+              <img src="images/event4.jpeg" alt="image" class="favorite-img" />
+              <h1>
+                Ramp Walk - The Walk of Fame <br />
+                Confidence? Check. Swag? Check. The Walk of Fame is where
+                attitude meets elegance, and the runway is your kingdom. This
+                is where style meets swag, where every step is a statement,
+                and where the runway bows down to YOU. Not everyone can handle
+                the spotlight, but if you know how to own a room without
+                saying a word, then buckle up: this stage was built for you.
+              </h1>
+              <span class="favorite-model button">Ramp Walk</span>
+            </article>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--==================== MODEL ====================-->
-     <!--  <section class="model section" id="model">
-        <h2 class="section-title">MODEL SPECIFICATIONS</h2>
-        <div class="model-container container grid">
-          <div class="model-content">
-            <img
-              src="./assets/img/model-img.png"
-              alt="image"
-              class="model-img"
-            />
+    <!--==================== MODEL ====================-->
+    <!--  <section class="model section" id="model">
+      <h2 class="section-title">MODEL SPECIFICATIONS</h2>
+      <div class="model-container container grid">
+        <div class="model-content">
+          <img src="./assets/img/model-img.png" alt="image" class="model-img" />
 
-            <div class="model-tooltip model-tooltip-1">
-              <img
-                src="./assets/img/tooltip-right.svg"
-                alt=""
-                class="model-tooltip-img"
-              />
-              <span class="model-tooltip-text">Best Comfort</span>
-            </div>
-
-            <div class="model-tooltip model-tooltip-2">
-              <img
-                src="./assets/img/tooltip-right.svg"
-                alt=""
-                class="model-tooltip-img"
-              />
-              <span class="model-tooltip-text">Easy Adjustment</span>
-            </div>
-
-            <div class="model-tooltip model-tooltip-3">
-              <img
-                src="./assets/img/tooltip-right.svg"
-                alt=""
-                class="model-tooltip-img"
-              />
-              <span class="model-tooltip-text">Fast Charge</span>
-            </div>
-
-            <div class="model-tooltip model-tooltip-4">
-              <img
-                src="./assets/img/tooltip-right.svg"
-                alt=""
-                class="model-tooltip-img"
-              />
-              <span class="model-tooltip-text">Custom Audio</span>
-            </div>
+          <div class="model-tooltip model-tooltip-1">
+            <img src="./assets/img/tooltip-right.svg" alt="" class="model-tooltip-img" />
+            <span class="model-tooltip-text">Best Comfort</span>
           </div>
 
-          <a href="#" class="model-button button"
-            >Buy Now <i class="ri-play-circle-fill"></i
-          ></a>
+          <div class="model-tooltip model-tooltip-2">
+            <img src="./assets/img/tooltip-right.svg" alt="" class="model-tooltip-img" />
+            <span class="model-tooltip-text">Easy Adjustment</span>
+          </div>
+
+          <div class="model-tooltip model-tooltip-3">
+            <img src="./assets/img/tooltip-right.svg" alt="" class="model-tooltip-img" />
+            <span class="model-tooltip-text">Fast Charge</span>
+          </div>
+
+          <div class="model-tooltip model-tooltip-4">
+            <img src="./assets/img/tooltip-right.svg" alt="" class="model-tooltip-img" />
+            <span class="model-tooltip-text">Custom Audio</span>
+          </div>
         </div>
-      </section>
+
+        <a href="#" class="model-button button">Buy Now <i class="ri-play-circle-fill"></i></a>
+      </div>
+    </section>
  -->
-      <!--==================== SPONSOR ====================-->
-      <!-- <section class="sponsor section">
+    <!--==================== SPONSOR ====================-->
+    <!-- <section class="sponsor section">
         <div class="sponsor-container container grid">
           <img
             src="./assets/img/sponsor-1.png"
@@ -384,97 +293,126 @@
       </section>
     </main> -->
 
-    <!--==================== FOOTER ====================-->
-    <!-- <footer class="footer">
-      <div class="footer-container container grid">
+    <!--==================== CONTACT ====================-->
+    <!--  <footer class="footer">
+      <div class="footer-container container">
         <div>
-          <a href="#" class="footer-logo">JBL</a>
-          <p class="footer-description">Elevating Your World of Sound.</p>
+          <a href="#" class="footer-logo">Contact Us</a>
         </div>
 
-        <div class="footer-data grid">
+        <div class="footer-data">
           <div>
-            <h3 class="footer-title">Products</h3>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link">Headphones</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Earphones</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Earbuds</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Accessories</a>
-              </li>
-            </ul>
+            <h3 class="footer-title">Address</h3>
+            <h1>#42, Vel Tech Road,
+              Vel Nagar, Avadi,
+              Chennai, Tamilnadu, 600062</h1>
           </div>
 
           <div>
-            <h3 class="footer-title">Support</h3>
-
-            <ul class="footer-links">
-              <li>
-                <a href="#" class="footer-link">Product Help</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Register</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Updates</a>
-              </li>
-
-              <li>
-                <a href="#" class="footer-link">Provides</a>
-              </li>
-            </ul>
+            <h3 class="footer-title">Email</h3>
+            <h1>vtmt@gmail.com</h1>
           </div>
 
           <div class="footer-group">
-            <form action="" class="footer-form">
-              <input type="email" placeholder="Email" class="footer-input" />
-              <button class="footer-button button">
-                Subscribe <i class="bx bxs-paper-plane"></i>
-              </button>
-            </form>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497225.2508921276!2d80.106764!3d13.189347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5289d88af459f3%3A0xa73242f57fb44db9!2sVel%20Tech%20Multi%20Tech%20Dr.Rangarajan%20Dr.Sakunthala%20Engineering%20College(Autonomous)!5e0!3m2!1sen!2sus!4v1739115335053!5m2!1sen!2sus"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
             <div class="footer-social">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <i class="ri-instagram-line"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
+              <a href="https://www.instagram.com/" target="_blank" class="footer-social-link">
+                <i class="ri-instagram-line"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" class="footer-social-link">
                 <i class="ri-facebook-fill"></i>
               </a>
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <i class="ri-youtube-fill"></i
-              ></a>
+              <a href="https://www.youtube.com/" target="_blank" class="footer-social-link">
+                <i class="ri-youtube-fill"></i></a>
             </div>
           </div>
         </div>
       </div> -->
 
-      <span class="footer-copy">
-        &#169; All Rights Reserved By Vel Tech Multi Tech.
-      </span>
+    <div class="contact_us_6">
+      <div class="responsive-container-block container">
+        <form class="form-box">
+          <div class="container-block form-wrapper">
+            <div class="mob-text">
+              <p class="text-blk contactus-head">
+                Get in Touch
+              </p>
+              <p class="text-blk contactus-subhead">
+                Vel Tech Multi Tech Dr.Rangarajan Dr.Sakunthala Engineering College(Autonomous)
+              </p>
+            </div>
+            <div class="responsive-container-block" id="i2cbk">
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-3">
+                <p class="text-blk input-title">
+                  FIRST NAME
+                </p>
+                <input class="input" id="ijowk-3" name="FirstName" placeholder="Please enter first name...">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ip1yp">
+                <p class="text-blk input-title">
+                  EMAIL
+                </p>
+                <input class="input" id="ipmgh-3" name="Email" placeholder="Please enter email...">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="ih9wi">
+                <p class="text-blk input-title">
+                  PHONE NUMBER
+                </p>
+                <input class="input" id="imgis-3" name="PhoneNumber" placeholder="Please enter phone number...">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-3">
+                <p class="text-blk input-title">
+                  WHAT DO YOU HAVE IN MIND ?
+                </p>
+                <textarea class="textinput" id="i5vyy-3" placeholder="Please enter query..."></textarea>
+              </div>
+            </div>
+            <button class="submit-btn" id="w-c-s-bgc_p-1-dm-id-2">
+              Submit
+            </button>
+          </div>
+        </form>
+        <div class="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
+          <div class="map-part">
+            <p class="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
+              Reach us at
+            </p>
+            <p class="text-blk map-contactus-subhead">
+              #42, Avadi – Vel Tech Road, Poonamallee - Avadi High Rd, Vel Nagar, Chennai, Tamil Nadu 600062, India
+            </p>
+            <div class="social-media-links mob">
+              <a class="social-icon-link" href="#" id="ix94i-2-2">
+                <img class="link-img image-block"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+              </a>
+              <a class="social-icon-link" href="#" id="itixd">
+                <img class="link-img image-block"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+              </a>
+              <a class="social-icon-link" href="#" id="izxvt">
+                <img class="link-img image-block"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+              </a>
+              <a class="social-icon-link" href="#" id="izldf-2-2">
+                <img class="link-img image-block"
+                  src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+              </a>
+            </div>
+            <div class="container-block">
+              <iframe class="map-box container-block"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d497225.2508921276!2d80.106764!3d13.189347!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5289d88af459f3%3A0xa73242f57fb44db9!2sVel%20Tech%20Multi%20Tech%20Dr.Rangarajan%20Dr.Sakunthala%20Engineering%20College(Autonomous)!5e0!3m2!1sen!2sus!4v1739168500689!5m2!1sen!2sus"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="footer-copy">
+      &#169; All Rights Reserved By Vel Tech Multi Tech.
+    </span>
     </footer>
 
     <!--=========== SCROLL UP ============-->
@@ -489,5 +427,6 @@
 
     <!--=========== WEB JS ============-->
     <script src="./assets/js/web.js"></script>
-  </body>
+</body>
+
 </html>
